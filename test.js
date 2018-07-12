@@ -1,9 +1,10 @@
 $('#sidebar-toggle').toggle(
-    function() {
-        console.log('toggle');
-        $('.sidebar').css('width', '0')
-        $('.content').css('width', '100%')
-    }, function() {
-        $('.sidebar').css('width', '30%')
-        $('.content').css('width', '70%')
-})
+    function () {
+        $('.sidebar').animate({ 'width': '0px' }, 'slow');
+        $('.content').animate({ 'width': '100%' }, 'slow');
+    },
+    function () {
+        $('.sidebar').animate({ 'width': '30%' }, 'slow');
+        $('.content').animate({ 'width': '70%' }, 'slow');
+    }
+)
