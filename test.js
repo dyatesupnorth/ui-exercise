@@ -1,7 +1,7 @@
 $('#sidebar-toggle').toggle(
     function () {
         $('.sidebar').animate({ 'width': '0px' }, 'slow',function(){
-            $('.sidebar').hide();
+            $('.sidebar').hide();   
         });
         $('.content').animate({ 'width': '100%' }, 'slow');
        
